@@ -126,12 +126,12 @@ Next, we need to import the reducer function from the counter slice and add it t
 ```js title="app/store.js"
 import { configureStore } from '@reduxjs/toolkit'
 // highlight-next-line
-import counterReducer from '../features/counter/counterSlice'
+import counterSlice from '../features/counter/counterSlice'
 
 export default configureStore({
   reducer: {
     // highlight-next-line
-    counter: counterReducer,
+    counter: counterSlice,
   },
 })
 ```
